@@ -1,0 +1,236 @@
+{
+  "luis_schema_version": "1.3.0",
+  "name": "CollectiveIntelligence",
+  "desc": "CollectiveIntelligence DEMO day",
+  "culture": "es-es",
+  "intents": [
+    {
+      "name": "Consultar-Etapas"
+    },
+    {
+      "name": "Consultar-Tecnologias"
+    },
+    {
+      "name": "Definicion-Tecnologia"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Tecnologia"
+    }
+  ],
+  "composites": [],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [
+    {
+      "name": "Tecnologia",
+      "mode": true,
+      "words": "Big Data,Inteligencia Artificial,Artificial Intelligence,IoT,Internet of Things,Business Analaytics",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "qué tecnologías puedo utilizar?",
+      "intent": "Consultar-Tecnologias",
+      "entities": []
+    },
+    {
+      "text": "qué tecnologías puedo usar?",
+      "intent": "Consultar-Tecnologias",
+      "entities": []
+    },
+    {
+      "text": "cuales son las tecnologías que se soportan?",
+      "intent": "Consultar-Tecnologias",
+      "entities": []
+    },
+    {
+      "text": "qué es big data?",
+      "intent": "Definicion-Tecnologia",
+      "entities": [
+        {
+          "entity": "Tecnologia",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "qué es inteligencia artificial?",
+      "intent": "Definicion-Tecnologia",
+      "entities": [
+        {
+          "entity": "Tecnologia",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "qué es internet of things?",
+      "intent": "Definicion-Tecnologia",
+      "entities": [
+        {
+          "entity": "Tecnologia",
+          "startPos": 2,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "qué es business analytics?",
+      "intent": "Definicion-Tecnologia",
+      "entities": [
+        {
+          "entity": "Tecnologia",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "qué es iot?",
+      "intent": "Definicion-Tecnologia",
+      "entities": [
+        {
+          "entity": "Tecnologia",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "cuáles son las etapas del programa?",
+      "intent": "Consultar-Etapas",
+      "entities": []
+    },
+    {
+      "text": "cuáles son las etapas?",
+      "intent": "Consultar-Etapas",
+      "entities": []
+    },
+    {
+      "text": "que es big data?",
+      "intent": "Definicion-Tecnologia",
+      "entities": [
+        {
+          "entity": "Tecnologia",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "/usr/local/bin/node",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "que tecnologias puedo utilizar?",
+      "intent": "Consultar-Tecnologias",
+      "entities": []
+    },
+    {
+      "text": "no entendi nada!!!!",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "{query}",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cuales son las etapas?",
+      "intent": "Consultar-Etapas",
+      "entities": []
+    },
+    {
+      "text": "que tecnologias puedo usar?",
+      "intent": "Consultar-Tecnologias",
+      "entities": []
+    },
+    {
+      "text": "cuales son los escenarios mas recomendables para big data?",
+      "intent": "Definicion-Tecnologia",
+      "entities": [
+        {
+          "entity": "Tecnologia",
+          "startPos": 7,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "hola",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "que es inteligencia artificial?",
+      "intent": "Definicion-Tecnologia",
+      "entities": [
+        {
+          "entity": "Tecnologia",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "que es la big data?",
+      "intent": "Definicion-Tecnologia",
+      "entities": [
+        {
+          "entity": "Tecnologia",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "de que se trata la inteligencia artificial?",
+      "intent": "Definicion-Tecnologia",
+      "entities": [
+        {
+          "entity": "Tecnologia",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "qué etapas hay?",
+      "intent": "Consultar-Etapas",
+      "entities": []
+    },
+    {
+      "text": "que es devops?",
+      "intent": "Definicion-Tecnologia",
+      "entities": [
+        {
+          "entity": "Tecnologia",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "que es iot?",
+      "intent": "Definicion-Tecnologia",
+      "entities": [
+        {
+          "entity": "Tecnologia",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    }
+  ]
+}

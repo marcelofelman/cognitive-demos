@@ -1,5 +1,6 @@
 let dotenv = require('dotenv');
 let http = require('http');
+let colors = require ('colors');
 
 dotenv.config({path: '../.env'});
 
@@ -15,6 +16,8 @@ var options = {
   }
 };
 
+console.log('Analizando imagen..');
+
 callback = function(response) {
   var str = '';
 
@@ -25,14 +28,14 @@ callback = function(response) {
   response.on('end', function () {
     let img = JSON.parse(str);
 
-    console.log('Categorias');
+    console.log('Categorias'.bold);
     img.categories.forEach(function(element) {
-        console.log(`Nombre: ${element.name}, Probabilidad: ${element.score}`);
+        console.log(`Nombre: ${element.name}, Probabilidad: ${element.score}`.green);
     }, this);
 
-    console.log('Etiquetas');
+    console.log('Etiquetas'.bold);
     img.tags.forEach(function(element) {
-        console.log(`Nombre: ${element.name}, Probabilidad: ${element.confidence}`);
+        console.log(`Nombre: ${element.name}, Probabilidad: ${element.confidence}`.blue);
     }, this);
 
   });
@@ -41,3 +44,4 @@ callback = function(response) {
 var req = http.request(options, callback);
 req.write(`{"url":"${url}"}`);
 req.end();
+
